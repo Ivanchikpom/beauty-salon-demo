@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BEAUTY + Style Demo — салон краси</title>
+  <meta name="description" content="Односторінковий сайт салону краси для запису з телефону: послуги, ціни, форма заявки, контакти та карта." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Fonts (серіф + сучасний санс) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="top">
+
+  <!-- LEFT SOCIAL BAR (як на скріні) -->
+  <aside class="socialbar" aria-label="Соцмережі">
+    <a class="socialbar__btn" href="#" aria-label="Facebook" title="Facebook">f</a>
+    <a class="socialbar__btn" href="#" aria-label="Instagram" title="Instagram">ig</a>
+    <a class="socialbar__btn" href="#" aria-label="YouTube" title="YouTube">yt</a>
+    <a class="socialbar__btn" href="#" aria-label="Viber" title="Viber">vb</a>
+  </aside>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav container" aria-label="Навігація">
+      <a class="brand" href="#top" aria-label="На головну">
+        <span class="brand__top">BEAUTY</span>
+        <span class="brand__sub">SALON • DEMO</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <div class="menu" id="menu">
+        <a class="menu-link" href="#services">Послуги</a>
+        <a class="menu-link" href="#pricing">Прайс</a>
+        <a class="menu-link" href="#about">Про нас</a>
+        <a class="menu-link" href="#contacts">Контакти</a>
+        <a class="menu-link" href="#order">Запис</a>
+      </div>
+
+      <div class="nav-right">
+        <a class="phone" href="tel:+380985235600">+380 00 000 0000</a>
+        <a class="btn btn-dark" href="#order">Записатися онлайн</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO (як на скріні: текст зліва + фото справа) -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <h1 class="hero__title">Салон краси у вашому місті</h1>
+          <p class="hero__text">
+            Поки ви насолоджуєтесь чашкою кави, ваша зовнішність набуває бездоганності.
+            Створіть свій ідеальний образ завдяки професійній допомозі експертів.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn-dark" href="#order">Записатися онлайн</a>
+            <a class="btn btn-outline" href="#pricing">Переглянути прайс</a>
+          </div>
+
+          <div class="hero__mini">
+            <div class="mini-card">
+              <div class="mini-card__t">Стерильність</div>
+              <div class="mini-card__d">обробка інструментів</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card__t">Комфорт</div>
+              <div class="mini-card__d">затишна атмосфера</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card__t">Майстри</div>
+              <div class="mini-card__d">досвід + смак</div>
+            </div>
+          </div>
+
+          <!-- Важливий підпис для портфоліо -->
+          <div class="portfolio-sign">
+            <div class="badge">Demo</div>
+            <div class="portfolio-sign__title">Demo: Сайт-візитка для локального бізнесу</div>
+            <div class="portfolio-sign__text">
+              <b>Односторінковий сайт для бізнесу.</b> Підходить для отримання заявок з телефону.
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media reveal" aria-label="Фото салону">
+          <!-- Постав своє фото: img/hero.jpg -->
+          <img src="hero.jpg" alt="Салон краси — фото" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVANTAGES (блок як “Переваги”) -->
+    <section class="section container reveal" id="about">
+      <div class="section-head">
+        <h2 class="h2">Переваги</h2>
+      </div>
+
+      <div class="adv-grid">
+        <article class="adv">
+          <h3>Професіоналізм</h3>
+          <p>Кожен майстер — сертифікований та працює в своєму напрямі.</p>
+        </article>
+        <article class="adv">
+          <h3>Безпека</h3>
+          <p>Дотримання правил дезінфекції та стерилізації — пріоритет №1.</p>
+        </article>
+        <article class="adv">
+          <h3>Комфорт</h3>
+          <p>Для кожної послуги — свій простір та атмосфера, щоб ви відпочили.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section container reveal" id="services">
+      <div class="section-head">
+        <h2 class="h2">Послуги</h2>
+        <p class="sub">Популярні процедури салону</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service">
+          <h3>Стрижки</h3>
+          <p>Жіночі/чоловічі/дитячі. Підбір під форму обличчя.</p>
+        </article>
+        <article class="service">
+          <h3>Фарбування</h3>
+          <p>Тонування, airtouch, балаяж, вихід з темного.</p>
+        </article>
+        <article class="service">
+          <h3>Манікюр</h3>
+          <p>Комбі/апаратний, покриття гель-лаком, дизайн.</p>
+        </article>
+        <article class="service">
+          <h3>Педикюр</h3>
+          <p>Класика/смарт/комбі — комфортно та акуратно.</p>
+        </article>
+        <article class="service">
+          <h3>Брови та вії</h3>
+          <p>Корекція, фарбування, ламінування.</p>
+        </article>
+        <article class="service">
+          <h3>Догляд</h3>
+          <p>SPA для волосся, відновлення, блиск.</p>
+        </article>
+      </div>
+
+      <div class="cta-line">
+        <a class="btn btn-dark" href="#order">Записатися / Написати</a>
+        <a class="btn btn-outline" href="#contacts">Контакти</a>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section container reveal" id="pricing">
+      <div class="section-head">
+        <h2 class="h2">Прайс</h2>
+        <p class="sub">Демо-ціни — легко замінити на реальні</p>
+      </div>
+
+      <div class="price-table">
+        <div class="price-row">
+          <div class="price-name">Манікюр + покриття</div>
+          <div class="price-val">від 600 грн</div>
+        </div>
+        <div class="price-row">
+          <div class="price-name">Педикюр</div>
+          <div class="price-val">від 800 грн</div>
+        </div>
+        <div class="price-row">
+          <div class="price-name">Стрижка жіноча</div>
+          <div class="price-val">від 450 грн</div>
+        </div>
+        <div class="price-row">
+          <div class="price-name">Фарбування (тонування)</div>
+          <div class="price-val">від 1200 грн</div>
+        </div>
+        <div class="price-row">
+          <div class="price-name">Брови (корекція + фарбування)</div>
+          <div class="price-val">від 350 грн</div>
+        </div>
+      </div>
+
+      <div class="cta-line">
+        <a class="btn btn-dark" href="#order">Записатися</a>
+        <a class="btn btn-outline" href="tel:+380985235600">Подзвонити</a>
+      </div>
+    </section>
+
+    <!-- ORDER FORM -->
+    <section class="section container reveal" id="order">
+      <div class="section-head">
+        <h2 class="h2">Форма запису</h2>
+        <p class="sub">Демо-форма (без сервера). Можемо підключити Netlify Forms.</p>
+      </div>
+
+      <form class="form" id="demoForm" autocomplete="on">
+        <div class="form-row">
+          <label class="field">
+            <span>Імʼя</span>
+            <input type="text" name="name" placeholder="Анна" required />
+          </label>
+
+          <label class="field">
+            <span>Телефон / Telegram</span>
+            <input type="text" name="contact" placeholder="+380… або @username" required />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Яка послуга та коли?</span>
+          <textarea name="message" placeholder="Наприклад: манікюр з покриттям у пʼятницю після 16:00…" required></textarea>
+        </label>
+
+        <button class="btn btn-dark btn-wide" type="submit">Відправити заявку</button>
+        <p class="note" id="formNote">Демо-форма: показує повідомлення, без відправки на сервер.</p>
+      </form>
+    </section>
+
+    <!-- CONTACTS + MAP -->
+    <section class="section container reveal" id="contacts">
+      <div class="section-head">
+        <h2 class="h2">Контакти</h2>
+        <p class="sub">Дані демо — заміниш на свої за 1 хвилину</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-item"><b>Адреса:</b> м. Київ, вул. Beauty, 12</div>
+          <div class="contact-item"><b>Графік:</b> Пн–Нд 10:00–20:00</div>
+          <div class="contact-item"><b>Телефон:</b> <a href="tel:+380985235600">+380 00 000 0000</a></div>
+
+          <div class="contact-actions">
+            <a class="btn btn-dark" href="#order">Записатися</a>
+            <a class="btn btn-outline" href="https://t.me/username" target="_blank" rel="noopener">Telegram</a>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Карта"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Boryspil&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 • Salon Demo. <span class="muted">Demo: Сайт-візитка для локального бізнесу</span></p>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Вгору">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
